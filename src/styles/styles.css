@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.form input {
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37,99,235,0.4);
+}
+
+button {
+  margin-top: 2rem;
+  grid-column: span 2;
+  padding: 0.75rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}

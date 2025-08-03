@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paperless asn2pdf</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Paperless ASN PDF creator</h1>
+        <p>This tool creates CODE128 barcodes to be used as Archive Serial Number (ASN) in Paperless NGX. Just edit the values below and click "Create PDF".</p>
+        <div class="form">
+            <div class="form-group">
+                <label for="asnPrefix">ASN prefix:</label>
+                <input id="asnPrefix" type="text" value="ASN">
+            </div>
+            <div class="form-group">
+                <label for="firstASN">First ASN:</label>
+                <input id="firstASN" type="number" value="66">
+            </div>
+            <div class="form-group">
+                <label for="numCodes">Number codes:</label>
+                <input id="numCodes" type="number" value="65">
+            </div>
+            <div class="form-group">
+                <label for="cols">Columns:</label>
+                <input id="cols" type="number" value="5">
+            </div>
+            <div class="form-group">
+                <label for="rows">Rows:</label>
+                <input id="rows" type="number" value="13">
+            </div>
+            <div class="form-group">
+                <label for="marginTop">Margin top (in mm):</label>
+                <input id="marginTop" type="number" value="11">
+            </div>
+            <div class="form-group">
+                <label for="marginBottom">Margin bottom (in mm):</label>
+                <input id="marginBottom" type="number" value="11">
+            </div>
+            <div class="form-group">
+                <label for="marginLeft">Margin left (in mm):</label>
+                <input id="marginLeft" type="number" value="5">
+            </div>
+            <div class="form-group">
+                <label for="marginRight">Margin right (in mm):</label>
+                <input id="marginRight" type="number" value="5">
+            </div>
+            <div class="form-group">
+                <label for="barcodeWidth">Barcode width (in mm):</label>
+                <input id="barcodeWidth" type="number" value="30">
+            </div>
+            <div class="form-group">
+                <label for="barcodeHeight">Barcode height (in mm):</label>
+                <input id="barcodeHeight" type="number" value="17">
+            </div>
+            <div class="form-group">
+                <label for="filename">Filename:</label>
+                <input id="filename" type="text" value="barcodes.pdf">
+            </div>
+        </div>
+
+        <button onclick="generate()">Create PDF</button>
+    </div>
+    <script src="src/scripts/renderer.js"></script>
+</body>
+
+</html>
