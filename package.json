@@ -1,6 +1,8 @@
 {
     "name": "paperless-asn2pdf",
-    "version": "1.0.0",
+    "version": "0.1.1",
+    "description": "Creates pdf-files which contain ASN barcodes, to be printed for Paperless NGX.",
+    "author": "phipzzz",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
@@ -9,6 +11,7 @@
     "build": {
         "appId": "com.example.asnpdf",
         "productName": "Paperless asn2pdf",
+        "electronVersion": "38.0.0",
         "files": [
             "main.js",
             "index.html",
@@ -30,6 +33,7 @@
         "pdfkit": "^0.17.1"
     },
     "devDependencies": {
+        "electron": "38.0.0",
         "electron-builder": "^24.6.0"
     }
 }
