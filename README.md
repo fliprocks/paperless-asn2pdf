@@ -4,12 +4,19 @@ This project is a basic Electron application to create ASN (Archive Serial Numbe
 
 ⚠️ **Note:** This project is work in progress. It has not been fully tested or documented yet, and things may still change.
 
+## Run the Application
+
+```bash
+cd paperless-asn2pdf
+npm start
+```
+
 ## Building an Executable
 
 1. Clone the repository:
     ```bash
     git clone https://github.com/phipzzz/paperless-asn2pdf.git
-    cd asn-pdf
+    cd paperless-asn2pdf
     ```
 2. Install dependencies:
     ```bash
@@ -25,6 +32,22 @@ This project is a basic Electron application to create ASN (Archive Serial Numbe
 -   Node.js
 -   npn
 -   electron-builder
+
+## Usage
+
+1. Configuration
+   After you started the app, adapt the configuration according to your needs.
+
+![](./img/configuration.png)
+
+2. Print scale
+   Ensure you selected 100% scale on your PDF reader when you prepare printing.
+
+![](./img/printScale.png)
+
+3. Result
+
+![](./img/bracodes-pdf.png)
 
 ## Planned features
 
