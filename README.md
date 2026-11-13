@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository was archived on November 13th, 2026, because meanwhile there are better tools available such as [asnlabels.com](https://asnlabels.com/).
+
 # Paperless asn2pdf
 
 This project is a basic Electron application to create ASN (Archive Serial Number) barcode stickers in CODE128 format for [Paperless NGX](https://github.com/paperless-ngx/paperless-ngx).
